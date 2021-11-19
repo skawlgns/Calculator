@@ -7,13 +7,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+   
+    @IBOutlet weak var displayLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tapNumberBtn(_ sender: UIButton) {
+        if let number = sender.title(for: .normal){
+            self.displayLabel.text = number
+        }
+    }
+    @IBAction func tapACBtn(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func tapDotBtn(_ sender: UIButton) {
+    }
+    @IBAction func tapDivBtn(_ sender: UIButton) {
+    }
+    @IBAction func tapMulBtn(_ sender: UIButton) {
+    }
+    @IBAction func tapSubBtn(_ sender: UIButton) {
+    }
+    @IBAction func tapSumBtn(_ sender: UIButton) {
+    }
+    @IBAction func tapEqulBtn(_ sender: UIButton) {
+    }
 }
 
